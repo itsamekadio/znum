@@ -10,8 +10,8 @@ A collection of numerical methods implemented in Zig, providing efficient and ty
 
 ### Installation
 ```bash
-git clone https://github.com/itsamekadio/numerical-methods-zig
-cd numerical-methods-zig
+git clone https://github.com/itsamekadio/znum
+cd znum
 zig build
 ```
 
@@ -231,25 +231,7 @@ errdefer {
 }
 ```
 
-## Testing
 
-### Run Tests
-```bash
-zig test src/main.zig
-zig test src/gaussseidel.zig
-zig test src/rootfinding.zig
-zig test src/numericalinteg.zig
-zig test src/lpp.zig
-```
-
-### Benchmarking
-```bash
-# Build in release mode
-zig build -Doptimize=ReleaseFast
-
-# Run benchmarks
-zig build run -- --method gaussseidel --benchmark
-```
 
 ## Contributing
 
